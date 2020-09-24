@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node ./src/crawler.ts"
+    "dev": "ts-node ./src/articleAnalyzer.ts"
   },
   "keywords": [],
   "author": "",
