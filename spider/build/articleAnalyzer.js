@@ -3,12 +3,7 @@
  * 文章分析器
  * 负责指定目标路径、存储路径、以及使用拿到的 根元素 找到 目标信息 生成 信息数组
  */
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-var crawler_1 = __importDefault(require("./crawler"));
-var path_1 = __importDefault(require("path"));
 var ArticleAnalyzer = /** @class */ (function () {
     function ArticleAnalyzer(url, filePath) {
         this.url = url;
@@ -42,5 +37,4 @@ var ArticleAnalyzer = /** @class */ (function () {
     };
     return ArticleAnalyzer;
 }());
-var article = new ArticleAnalyzer("https://88250.b3log.org/", path_1.default.resolve(__dirname, "../data/articles.json"));
-new crawler_1.default(article);
+exports.default = ArticleAnalyzer;
